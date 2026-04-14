@@ -1,0 +1,1012 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Golden Charge Electrician Company | Bay Area</title>
+    <meta name="description" content="Top-rated Electrician in Fremont, San Jose & Bay Area. Specializing in Panel Upgrades, EV Chargers (Tesla), Smart Homes & 24/7 Emergency Repairs. Lic# 1143055.">
+    
+    <link rel="icon" href="https://pub-a9f35b2b86db4656b16e6e97d0d62544.r2.dev/android-chrome-192x192.png" type="image/x-icon">
+    <link rel="shortcut icon" href="https://pub-a9f35b2b86db4656b16e6e97d0d62544.r2.dev/android-chrome-192x192.png" type="image/x-icon">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Montserrat:wght@600;700;800&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+    <style>
+        :root {
+            --gold-gradient: linear-gradient(135deg, #FFD700 0%, #FDB931 50%, #FFD700 100%);
+            --gold-flat: #FFD700;
+            --dark-blue: #051b4d;
+            --light-gray: #F8F9FA;
+            --transition: all 0.4s cubic-bezier(0.165, 0.84, 0.44, 1);
+        }
+
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        
+        body { 
+            background: var(--light-gray); 
+            color: #1E1E1E; 
+            line-height: 1.6; 
+            overflow-x: hidden; 
+            padding-bottom: 60px; 
+            font-family: 'Inter', sans-serif; 
+            top: 0px !important; 
+        }
+
+        h1, h2, h3, h4, .btn, .nav-menu a { font-family: 'Montserrat', sans-serif; letter-spacing: -0.5px; }
+        html { scroll-behavior: smooth; }
+        
+        /* BARRA IDIOMAS */
+        #language-bar { background: #f0f0f0; border-bottom: 1px solid #ddd; padding: 5px 20px; text-align: right; display: flex; justify-content: flex-end; align-items: center; gap: 15px; font-size: 0.85rem; }
+        .goog-te-banner-frame.skiptranslate { display: none !important; } 
+        #google_translate_element .goog-te-gadget-simple { background-color: #fff; border: 1px solid #ccc; padding: 3px 8px; border-radius: 4px; font-family: 'Inter', sans-serif; }
+
+        /* HEADER */
+        header { 
+            background: rgba(5, 27, 77, 0.85);
+            backdrop-filter: blur(12px); -webkit-backdrop-filter: blur(12px);
+            padding: 0.8rem 0; position: sticky; width: 100%; top: 0; z-index: 1000; 
+            border-bottom: 1px solid rgba(255, 215, 0, 0.1);
+        }
+        .container { max-width: 1200px; margin: 0 auto; padding: 0 20px; }
+        .header-content { display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 1rem; }
+        
+        .logo { display: flex; align-items: center; gap: 10px; font-size: 1.6rem; font-weight: 800; color: var(--gold-flat); text-decoration: none; text-transform: uppercase; letter-spacing: 1px; }
+        .logo img { height: 55px; width: 55px; border-radius: 50%; border: 2px solid var(--gold-flat); }
+        
+        .nav-menu { display: flex; gap: .5rem; overflow-x: auto; scrollbar-width: none; padding: 0 5px; align-items: center; }
+        .nav-menu::-webkit-scrollbar { display: none; }
+        .nav-menu a { white-space: nowrap; color: #eee; text-decoration: none; font-weight: 600; padding: 8px 15px; border-radius: 6px; font-size: .85rem; transition: var(--transition); }
+        .nav-menu a:hover { color: var(--gold-flat); background: rgba(255,255,255,0.05); }
+
+        .nav-menu a.header-call-btn { 
+            background: var(--gold-gradient); color: var(--dark-blue); font-weight: 800; border-radius: 50px; 
+            padding: 8px 20px; margin-right: 10px; box-shadow: 0 4px 15px rgba(255, 215, 0, 0.4);
+            animation: pulse-gold 2s infinite; 
+        }
+        @keyframes pulse-gold {
+            0% { box-shadow: 0 0 0 0 rgba(255, 215, 0, 0.7); }
+            70% { box-shadow: 0 0 0 10px rgba(255, 215, 0, 0); }
+            100% { box-shadow: 0 0 0 0 rgba(255, 215, 0, 0); }
+        }
+
+        /* HERO - UPDATED WITH RESPONSIVE VIDEO BACKGROUND & FIXED TYPEWRITER */
+        .hero { 
+            position: relative; 
+            height: calc(100vh - 80px); 
+            display: flex; 
+            align-items: center; 
+            justify-content: center; 
+            color: #fff; 
+            text-align: center; 
+            padding: 0 20px;
+            overflow: hidden; 
+            background: #051b4d; 
+        }
+        
+        .hero-video {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            z-index: 0;
+        }
+
+        @media (max-width: 768px) {
+            .hero-video {
+                object-position: center center;
+            }
+        }
+
+        .hero::before { 
+            content: ''; 
+            position: absolute; 
+            top: 0; left: 0; right: 0; bottom: 0; 
+            background: linear-gradient(to bottom, rgba(0,0,0,0.3), rgba(5,27,77,0.95)); 
+            z-index: 1; 
+        }
+
+        .hero-content { position: relative; z-index: 2; max-width: 900px; padding: 40px; }
+        .hero h1 { font-size: 3.5rem; margin-bottom: 0.5rem; color: var(--gold-flat); text-shadow: 0 4px 10px rgba(0,0,0,0.5); line-height: 1.1; }
+        .hero p { font-size: 1.4rem; margin-bottom: 2.5rem; opacity: 0.9; font-weight: 300; }
+        
+        /* --- ESTILOS TYPEWRITER --- */
+        .typewriter-container {
+            font-size: 2.2rem;
+            font-weight: 700;
+            color: #fff;
+            margin-bottom: 1.5rem;
+            min-height: 3.5rem;
+            font-family: 'Montserrat', sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 10px;
+            flex-wrap: wrap;
+        }
+        
+        .typewriter-word {
+            color: var(--gold-flat);
+            text-shadow: 0 0 20px rgba(255, 215, 0, 0.4);
+            white-space: nowrap;
+        }
+        
+        .cursor {
+            display: inline-block;
+            width: 3px;
+            background-color: #fff;
+            animation: blink 1s infinite;
+        }
+        
+        @keyframes blink { 0% { opacity: 1; } 50% { opacity: 0; } 100% { opacity: 1; } }
+
+        @media (max-width: 768px) { 
+            .typewriter-container { 
+                font-size: 1.8rem; 
+                flex-direction: column;
+                gap: 5px;
+                margin-top: 10px;
+            } 
+        }
+
+        .btn { 
+            display: inline-block; padding: 18px 50px; background: var(--gold-gradient); 
+            color: var(--dark-blue); text-decoration: none; border-radius: 50px; 
+            font-weight: 800; text-transform: uppercase; letter-spacing: 1px;
+            box-shadow: 0 10px 30px rgba(255, 215, 0, 0.3); position: relative; overflow: hidden; transition: var(--transition);
+        }
+        .btn:hover { transform: translateY(-5px); box-shadow: 0 15px 35px rgba(255, 215, 0, 0.5); }
+        .btn::after {
+            content:''; position: absolute; top:0; left:-100%; width:50%; height:100%;
+            background: linear-gradient(to right, rgba(255,255,255,0) 0%, rgba(255,255,255,0.6) 50%, rgba(255,255,255,0) 100%);
+            transform: skewX(-25deg); animation: shine 4s infinite;
+        }
+        @keyframes shine { 0% { left: -100%; } 20% { left: 200%; } 100% { left: 200%; } }
+        .btn:disabled { background: #ccc; color: #666; cursor: not-allowed; animation: none; box-shadow: none; transform: none; }
+
+        /* BRANDS */
+        .partners-section { background-color: #ffffff; padding: 40px 20px; border-bottom: 1px solid #eee; }
+        .partners-title { font-size: 0.9rem; color: #999; text-transform: uppercase; letter-spacing: 2px; margin-bottom: 25px; font-weight: 700; }
+        .partners-grid { display: flex; flex-wrap: wrap; justify-content: center; gap: 50px; }
+        .partner-logo img { height: 40px; opacity: 0.4; filter: grayscale(100%); transition: var(--transition); }
+        .partner-logo img:hover { filter: grayscale(0%); opacity: 1; transform: scale(1.1); }
+
+        /* SERVICES */
+        .services { padding: 100px 0; background: #fff; }
+        .section-title { text-align: center; margin-bottom: 60px; color: var(--dark-blue); font-size: 2.8rem; font-weight: 800; position: relative; display: inline-block; width: 100%; }
+        .section-title::after { content: ''; display: block; width: 80px; height: 4px; background: var(--gold-gradient); margin: 15px auto 0; border-radius: 2px; }
+        .services-grid { display: grid; grid-template-columns: repeat(auto-fit,minmax(280px,1fr)); gap: 30px; }
+        
+        .service-video-wrapper {
+            width: 100px;
+            height: 100px;
+            margin: 0 auto 25px;
+            border-radius: 20px;
+            overflow: hidden;
+            box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+            border: 2px solid var(--gold-flat);
+            background: #000;
+            position: relative;
+        }
+
+        .service-video-wrapper video {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            display: block;
+        }
+
+        /* --- EFECTO ELECTRIC GLOW --- */
+        @keyframes electricPulse {
+            0% { box-shadow: 0 0 0 0 rgba(255, 215, 0, 0.4); }
+            70% { box-shadow: 0 0 0 15px rgba(255, 215, 0, 0); }
+            100% { box-shadow: 0 0 0 0 rgba(255, 215, 0, 0); }
+        }
+
+        .service-card { background: #fff; padding: 40px 30px; border-radius: 20px; text-align: center; border: 1px solid #eee; box-shadow: 0 10px 40px rgba(0,0,0,0.05); transition: var(--transition); }
+        
+        .service-card:hover { 
+            transform: translateY(-15px); 
+            border-color: var(--gold-flat); 
+            /* Brillo estático + interno */
+            box-shadow: 0 0 25px rgba(255, 215, 0, 0.5), inset 0 0 10px rgba(255, 215, 0, 0.1); 
+            /* Animación del pulso */
+            animation: electricPulse 1.5s infinite; 
+        }
+
+        .service-icon { font-size: 3.5rem; background: -webkit-linear-gradient(#FFD700, #FDB931); -webkit-background-clip: text; -webkit-text-fill-color: transparent; margin-bottom: 25px; }
+        .service-card h3 { margin-bottom: 15px; color: var(--dark-blue); font-size: 1.4rem; }
+
+        /* TESTIMONIALS */
+        .testimonials { padding: 100px 0; background: linear-gradient(to bottom, #f0f4f8, #fff); }
+        .testimonial-card { background: #fff; padding: 50px; border-radius: 20px; box-shadow: 0 20px 60px rgba(0,0,0,0.08); text-align: center; max-width: 800px; margin: 0 auto; border-top: 5px solid var(--gold-flat); }
+        .testimonial-text { font-size: 1.4rem; line-height: 1.6; color: #333; font-style: italic; margin-bottom: 25px; font-family: 'Times New Roman', serif; }
+        .testimonial-author { color: var(--dark-blue); font-weight: 700; text-transform: uppercase; letter-spacing: 1px; }
+        .google-review-btn { background: #fff; color: #4285F4; border: 2px solid #4285F4; padding: 12px 30px; font-weight: bold; border-radius: 50px; text-decoration: none; display: inline-flex; align-items: center; gap: 10px; margin-top: 30px; transition: var(--transition); }
+        .google-review-btn:hover { background: #4285F4; color: #fff; transform: translateY(-3px); box-shadow: 0 5px 15px rgba(66, 133, 244, 0.3); }
+
+        /* CALCULATOR */
+        .calculator-section { padding: 100px 20px; background: #f8f9fa; }
+        .calculator-wrapper { max-width: 750px; margin: 0 auto; background: #fff; border-radius: 25px; padding: 50px; box-shadow: 0 20px 60px rgba(0,0,0,0.1); }
+        .calc-step.active { display: block; animation: slideUp 0.5s ease; }
+        @keyframes slideUp { from { opacity: 0; transform: translateY(20px); } to { opacity: 1; transform: translateY(0); } }
+        .calc-options { display: grid; grid-template-columns: repeat(auto-fit,minmax(160px,1fr)); gap: 15px; margin-bottom: 25px; }
+        .calc-card { border: 2px solid #eee; padding: 25px 15px; border-radius: 12px; text-align: center; cursor: pointer; font-weight: 600; transition: var(--transition); }
+        .calc-card:hover, .calc-card:has(input:checked) { border-color: var(--gold-flat); background: rgba(255,215,0,0.05); transform: translateY(-3px); box-shadow: 0 5px 15px rgba(0,0,0,0.05); }
+        .calc-card input { display: none; }
+        .price-display { font-size: 2.5rem; font-weight: 800; color: var(--dark-blue); text-align: center; margin: 30px 0; background: var(--light-gray); padding: 20px; border-radius: 10px; }
+        .form-control { width: 100%; padding: 16px; border: 1px solid #ddd; border-radius: 12px; font-size: 1rem; transition: 0.3s; background: #fcfcfc; }
+        .form-control:focus { outline: none; border-color: var(--gold-flat); background: #fff; box-shadow: 0 0 0 4px rgba(255, 215, 0, 0.1); }
+        .verification-code-input { text-align: center; font-size: 2rem; letter-spacing: 1rem; font-family: monospace; }
+        .form-group.inline-fields { display: grid; grid-template-columns: 1fr 1fr; gap: 20px; }
+        .form-group { margin-bottom: 20px; }
+
+        /* GALLERY */
+        .gallery { padding: 100px 0; background: #fff; }
+        .gallery-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(350px, 1fr)); gap: 30px; }
+        .project-card { background: #fff; border-radius: 20px; overflow: hidden; box-shadow: 0 10px 30px rgba(0,0,0,0.08); transition: var(--transition); border: 1px solid rgba(0,0,0,0.03); }
+        .project-card:hover { transform: translateY(-10px); box-shadow: 0 25px 60px rgba(0,0,0,0.15); }
+        .img-wrapper { height: 260px; overflow: hidden; position: relative; }
+        .img-wrapper img { width: 100%; height: 100%; object-fit: cover; transition: transform 0.6s ease; }
+        .project-card:hover .img-wrapper img { transform: scale(1.1); }
+        .img-wrapper::after { content: ''; position: absolute; inset: 0; background: linear-gradient(to top, rgba(0,0,0,0.6), transparent); opacity: 0; transition: 0.3s; }
+        .project-card:hover .img-wrapper::after { opacity: 1; }
+        .project-info { padding: 30px; }
+        .tag-pill { background: var(--gold-gradient); color: var(--dark-blue); font-size: 0.7rem; padding: 5px 12px; border-radius: 30px; font-weight: 800; text-transform: uppercase; letter-spacing: 0.5px; display: inline-block; margin-bottom: 10px; }
+        .project-title { margin: 10px 0; color: var(--dark-blue); font-size: 1.4rem; font-weight: 700; }
+        .project-desc { font-size: 0.95rem; color: #666; line-height: 1.6; }
+        .project-loc { margin-top: 15px; font-size: 0.85rem; color: #999; font-weight: 600; display: flex; align-items: center; gap: 5px; }
+
+        /* FAQ */
+        .faq-section { padding: 100px 0; background: #f8f9fa; }
+        .faq-card { background: #fff; padding: 35px; border-radius: 15px; box-shadow: 0 5px 20px rgba(0,0,0,0.05); border-left: 5px solid var(--gold-flat); transition: var(--transition); }
+        .faq-card:hover { transform: translateY(-5px); box-shadow: 0 15px 40px rgba(0,0,0,0.1); }
+        .faq-card h3 { color: var(--dark-blue); margin-bottom: 15px; display: flex; align-items: center; gap: 10px; }
+
+        /* ABOUT */
+        .about { padding: 100px 0; background: var(--dark-blue); color: #fff; position: relative; overflow: hidden; }
+        .about-content { display: flex; gap: 60px; flex-wrap: wrap; align-items: center; justify-content: center; position: relative; z-index: 2; }
+        .about-text h2 { font-size: 3rem; margin-bottom: 25px; color: var(--gold-flat); }
+        .highlight { color: var(--gold-flat); font-weight: 700; }
+        
+        /* MEJORA VISUAL ABOUT US */
+        .about-image { 
+            position: relative; 
+            border-radius: 20px; 
+            overflow: visible; 
+            box-shadow: 0 20px 60px rgba(0,0,0,0.3); 
+            border: none;
+            z-index: 1;
+        }
+
+        .about-image::before {
+            content: '';
+            position: absolute;
+            top: 20px;
+            left: 20px;
+            right: -20px;
+            bottom: -20px;
+            border: 3px solid var(--gold-flat);
+            border-radius: 20px;
+            z-index: -1;
+            transition: transform 0.4s ease;
+        }
+
+        .about-image:hover::before {
+            transform: translate(10px, 10px);
+        }
+
+        .about-image img { 
+            width: 100%; 
+            height: auto; 
+            display: block; 
+            border-radius: 20px; 
+        }
+
+        .trust-badge {
+            position: absolute;
+            bottom: -30px;
+            left: -30px;
+            background: var(--gold-gradient);
+            color: var(--dark-blue);
+            padding: 20px;
+            border-radius: 50%;
+            width: 120px;
+            height: 120px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+            font-weight: 800;
+            font-size: 0.9rem;
+            line-height: 1.2;
+            z-index: 2;
+            animation: floatBadge 3s ease-in-out infinite;
+        }
+
+        .trust-badge span { font-size: 1.5rem; display: block; margin-bottom: 2px; }
+
+        @keyframes floatBadge {
+            0%, 100% { transform: translateY(0); }
+            50% { transform: translateY(-10px); }
+        }
+
+        @media (max-width: 768px) {
+            .about-image::before { right: 10px; bottom: 10px; top: 10px; left: 10px; }
+            .trust-badge { width: 90px; height: 90px; bottom: -20px; left: -10px; font-size: 0.7rem; }
+            .trust-badge span { font-size: 1.2rem; }
+        }
+
+        /* CONTACTO DE LUJO (GLASSMORPHISM) */
+        .contact { 
+            padding: 120px 0; 
+            background: #020b1f; /* Fondo azul muy oscuro */
+            position: relative; 
+            overflow: hidden; 
+        }
+
+        /* Efectos de luz ambiental detrás del cristal */
+        .contact::before {
+            content: ''; position: absolute; top: -10%; right: -5%; width: 500px; height: 500px;
+            background: radial-gradient(circle, rgba(255, 215, 0, 0.15) 0%, rgba(0,0,0,0) 70%); /* Luz Dorada */
+            border-radius: 50%; pointer-events: none;
+        }
+        .contact::after {
+            content: ''; position: absolute; bottom: -10%; left: -5%; width: 500px; height: 500px;
+            background: radial-gradient(circle, rgba(5, 27, 77, 0.4) 0%, rgba(0,0,0,0) 70%); /* Luz Azul */
+            border-radius: 50%; pointer-events: none;
+        }
+
+        .contact .section-title { color: #fff; } 
+        .contact .section-title::after { background: var(--gold-gradient); }
+
+        /* El formulario de CRISTAL */
+        .contact-form { 
+            max-width: 700px; margin: 0 auto; padding: 60px; 
+            background: rgba(255, 255, 255, 0.03); 
+            backdrop-filter: blur(20px); 
+            -webkit-backdrop-filter: blur(20px);
+            border-radius: 30px; 
+            border: 1px solid rgba(255, 255, 255, 0.1); 
+            box-shadow: 0 30px 80px rgba(0,0,0,0.4); 
+            position: relative; z-index: 2;
+        }
+
+        .contact label { color: #bbb; font-weight: 500; margin-bottom: 8px; display: block; font-size: 0.9rem; text-transform: uppercase; letter-spacing: 1px; }
+
+        /* Inputs oscuros integrados */
+        .contact .form-control { 
+            background: rgba(0, 0, 0, 0.3); 
+            border: 1px solid rgba(255, 255, 255, 0.1); 
+            color: #fff; 
+            border-radius: 12px;
+        }
+
+        .contact .form-control:focus { 
+            background: rgba(0, 0, 0, 0.5); 
+            border-color: var(--gold-flat); 
+            box-shadow: 0 0 15px rgba(255, 215, 0, 0.1); 
+            outline: none;
+        }
+
+        /* Ajuste del botón para que resalte en lo oscuro */
+        .form-submit { 
+            background: var(--gold-gradient); 
+            color: var(--dark-blue); 
+            border: none; padding: 18px 40px; border-radius: 50px; 
+            font-size: 1.1rem; font-weight: 800; cursor: pointer; width: 100%; margin-top: 20px; 
+            box-shadow: 0 10px 30px rgba(255, 215, 0, 0.2); transition: var(--transition); 
+        }
+        .form-submit:hover { transform: translateY(-3px); box-shadow: 0 15px 40px rgba(255, 215, 0, 0.4); }
+
+        @media (max-width: 768px) { .contact-form { padding: 30px 20px; } }
+
+        /* FOOTER */
+        footer { background: #020d26; color: #ccc; padding: 80px 0 40px; font-size: 0.95rem; }
+        .footer-content { display: grid; grid-template-columns: repeat(auto-fit,minmax(250px,1fr)); gap: 40px; margin-bottom: 50px; }
+        .footer-column h3 { color: var(--gold-flat); margin-bottom: 25px; font-size: 1.4rem; letter-spacing: 1px; }
+        .footer-column a { color: #ccc; text-decoration: none; transition: 0.3s; }
+        .footer-column a:hover { color: var(--gold-flat); padding-left: 5px; }
+        
+        .sticky-mobile-bar { position: fixed; bottom: 0; left: 0; width: 100%; background: rgba(255,255,255,0.95); backdrop-filter: blur(10px); box-shadow: 0 -5px 20px rgba(0,0,0,0.1); display: none; z-index: 9990; padding: 12px 15px 12px 15px; padding-right: 85px; gap: 15px; border-top: 1px solid #eee; }
+        .sticky-btn { flex: 1; text-align: center; padding: 14px; border-radius: 12px; font-weight: 700; text-decoration: none; font-size: 1rem; display: flex; align-items: center; justify-content: center; gap: 8px; }
+        .sticky-call { background: var(--dark-blue); color: #fff; }
+        .sticky-quote { background: var(--gold-gradient); color: var(--dark-blue); }
+        @media (max-width: 768px) { 
+            .sticky-mobile-bar { display: flex; } 
+            .hero h1 { font-size: 2.5rem; }
+            .section-title { font-size: 2rem; }
+            .contact-form { padding: 30px 20px; } /* Ajuste extra para movil */
+        }
+        
+        .whatsapp-btn { position: fixed; bottom: 90px; right: 20px; width: 65px; height: 65px; background: #25D366; color: #fff; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 2.5rem; z-index: 1005; box-shadow: 0 10px 30px rgba(37, 211, 102, 0.4); transition: var(--transition); text-decoration: none; }
+        .whatsapp-btn:hover { transform: scale(1.1) rotate(10deg); }
+        @media (max-width: 768px) { .whatsapp-btn { right: auto; left: 20px; bottom: 110px; width: 60px; height: 60px; } }
+    </style>
+
+    <script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-firestore.js"></script>
+
+    <script>
+        // FIREBASE CONFIG
+        const firebaseConfig = {
+            apiKey: "AIzaSyCI6R6RzFQJb28cPApSdFXdqtOT49C6Eso",
+            authDomain: "goldench-final-chatbot.firebaseapp.com",
+            projectId: "goldench-final-chatbot",
+            storageBucket: "goldench-final-chatbot.appspot.com",
+            messagingSenderId: "418294744257",
+            appId: "1:418294744257:web:f06d527214360aae358040"
+        };
+        const app = firebase.initializeApp(firebaseConfig);
+        const db = firebase.firestore();
+        let confirmationResult = null;
+        let isFirstSendAttempt = true;
+
+        const FALLBACK_PRICES = {
+            "panel-100": { base: { small: 500, medium: 700, large: 900 }, factor: { new: 100, mid: 200, old: 300 } },
+            "panel-200": { base: { small: 800, medium: 1000, large: 1200 }, factor: { new: 150, mid: 250, old: 350 } },
+            "ev-charger": { base: { small: 700, medium: 900, large: 1100 }, factor: { new: 50, mid: 100, old: 150 } },
+            "smart-home": { base: { small: 300, medium: 500, large: 700 }, factor: { new: 20, mid: 50, old: 100 } },
+            "panel-400": { base: { small: 3800, medium: 4500, large: 5500 }, factor: { new: 400, mid: 800, old: 1500 } },
+            "full-smart-home": { base: { small: 4000, medium: 6500, large: 9000 }, factor: { new: 300, mid: 750, old: 1300 } },
+            "solar-panel": { base: { small: 12000, medium: 18000, large: 25000 }, factor: { new: 0, mid: 1000, old: 2000 } }
+        };
+
+        function nextStep() {
+            const service = document.querySelector('input[name="service"]:checked');
+            if (!service) return alert('Please select a service');
+            document.querySelectorAll('.calc-step').forEach(s => s.classList.remove('active'));
+            document.getElementById('step2').classList.add('active');
+        }
+
+        function calculateEstimate() {
+            const service = document.querySelector('input[name="service"]:checked');
+            const size = document.getElementById('houseSize').value;
+            const year = document.getElementById('houseYear').value;
+            if (!service || !size || !year) return alert('Please select all fields');
+            document.querySelectorAll('.calc-step').forEach(s => s.classList.remove('active'));
+            document.getElementById('step3').classList.add('active');
+        }
+
+        async function sendVerificationCode() {
+            const sendButton = document.getElementById('sendCodeBtn');
+            const resendLink = document.getElementById('resendLink');
+            if(sendButton) { sendButton.disabled = true; sendButton.textContent = 'Sending...'; }
+            if(resendLink) resendLink.style.pointerEvents = 'none';
+            const recaptchaContainer = document.getElementById('recaptcha-container');
+            recaptchaContainer.innerHTML = '';
+            const appVerifier = new firebase.auth.RecaptchaVerifier('recaptcha-container', { 'size': 'invisible' });
+
+            const email = document.getElementById('leadEmail').value.trim();
+            const city = document.getElementById('leadCity').value.trim();
+            let phone = document.getElementById('phoneNumber').value.trim();
+            if (!email || !city || !phone) {
+                alert('Please complete all fields');
+                if(sendButton) { sendButton.disabled = false; sendButton.textContent = 'Send Code & Capture Info'; }
+                if(resendLink) resendLink.style.pointerEvents = 'auto';
+                return;
+            }
+
+            if (isFirstSendAttempt) {
+                try {
+                    const autoLeadForm = document.getElementById('autoLeadCaptureForm');
+                    autoLeadForm.querySelector('input[name="email"]').value = email;
+                    autoLeadForm.querySelector('input[name="city"]').value = city;
+                    autoLeadForm.querySelector('input[name="phone"]').value = phone;
+                    await fetch(autoLeadForm.action, { method: 'POST', body: new FormData(autoLeadForm) });
+                    isFirstSendAttempt = false;
+                } catch (error) { console.error('Error capturing lead:', error); }
+            }
+            if (!phone.startsWith('+1')) phone = '+1' + phone.replace(/\D/g, '');
+
+            try {
+                confirmationResult = await firebase.auth().signInWithPhoneNumber(phone, appVerifier);
+                document.getElementById('verificationCodeSection').style.display = 'block';
+                document.getElementById('leadEmail').disabled = true;
+                document.getElementById('leadCity').disabled = true;
+                document.getElementById('phoneNumber').disabled = true;
+                if (sendButton) sendButton.style.display = 'none';
+                if(resendLink) resendLink.style.display = 'inline';
+                alert('Code sent!');
+            } catch (error) {
+                console.error("Error sending SMS:", error);
+                alert('Error sending code.');
+                document.getElementById('leadEmail').disabled = false;
+                document.getElementById('leadCity').disabled = false;
+                document.getElementById('phoneNumber').disabled = false;
+            } finally {
+                if (sendButton) sendButton.disabled = false;
+                if(sendButton && sendButton.style.display !== 'none') sendButton.textContent = 'Send Code & Capture Info';
+                if(resendLink) resendLink.style.pointerEvents = 'auto';
+            }
+        }
+
+        async function verifyCode() {
+            const code = document.getElementById('verificationCode').value.trim();
+            if (code.length !== 6) return alert('Enter 6-digit code');
+            const verifyButton = document.querySelector('#verificationCodeSection .btn');
+            verifyButton.disabled = true; verifyButton.textContent = 'Verifying...';
+            try {
+                await confirmationResult.confirm(code);
+                alert('Verified!');
+                showEstimateAndForm();
+            } catch (error) {
+                console.error("Error verifying:", error);
+                alert('Invalid code');
+                verifyButton.disabled = false; verifyButton.textContent = 'Verify & Show Estimate';
+            }
+        }
+
+        async function showEstimateAndForm() {
+            const prices = FALLBACK_PRICES;
+            const service = document.querySelector('input[name="service"]:checked').value;
+            const size = document.getElementById('houseSize').value;
+            const year = document.getElementById('houseYear').value;
+            const base = prices[service].base[size];
+            const factor = prices[service].factor[year];
+            const total = Math.round((base + factor) * 1.20); 
+            document.getElementById('verificationCodeSection').style.display = 'none';
+            document.getElementById('resultPrice').textContent = `Estimated Range: $${total.toLocaleString()}`;
+            document.getElementById('resultPrice').style.display = 'block';
+            document.getElementById('calcLeadForm').style.display = 'block';
+            document.getElementById('finalEmail').value = document.getElementById('leadEmail').value;
+            document.getElementById('finalPhone').value = document.getElementById('phoneNumber').value;
+            document.getElementById('calcService').value = service;
+            document.getElementById('calcSize').value = size;
+            document.getElementById('calcYear').value = year;
+            document.getElementById('calcTotal').value = total;
+        }
+
+        const testimonials = [
+            { "text": "Installed my Tesla charger in just 3 hours. Professional and clean work!", "author": "— Maria G., San Francisco" },
+            { "text": "Upgraded my panel from 100A to 200A. Everything went smoothly with a 1-year warranty.", "author": "— James L., Oakland" },
+            { "text": "My lights were flickering constantly. Found the issue in minutes. Real experts!", "author": "— Sofia R., San Jose" },
+            { "text": "Installed smart lighting and security cameras. My home is safer now.", "author": "— David K., Berkeley" },
+            { "text": "Needed emergency service at 11 PM. They arrived in 30 minutes and fixed everything!", "author": "— Lisa M., Fremont" }
+        ];
+
+        function loadWeeklyTestimonialCarousel() {
+            let index = 0;
+            const display = document.getElementById('testimonial-display');
+            function show() {
+                const t = testimonials[index % testimonials.length];
+                display.innerHTML = `<p class="testimonial-text">"${t.text}"</p><p class="testimonial-author">${t.author}</p>`;
+            }
+            show();
+            setInterval(() => { index++; show(); }, 8000);
+        }
+        
+        // TYPEWRITER EFFECT SCRIPT
+        const words = ["Home", "Business", "Tesla", "Life", "Family"];
+        let i = 0;
+        let timer;
+
+        function typingEffect() {
+            let word = words[i].split("");
+            var loopTyping = function() {
+                if (word.length > 0) {
+                    document.querySelector('.typewriter-word').innerHTML += word.shift();
+                } else {
+                    setTimeout(deletingEffect, 2000); // Wait 2s before deleting
+                    return false;
+                }
+                timer = setTimeout(loopTyping, 150); // Typing speed
+            };
+            loopTyping();
+        }
+
+        function deletingEffect() {
+            let word = words[i].split("");
+            var loopDeleting = function() {
+                if (word.length > 0) {
+                    word.pop();
+                    document.querySelector('.typewriter-word').innerHTML = word.join("");
+                } else {
+                    if (words.length > (i + 1)) { i++; } else { i = 0; }
+                    typingEffect();
+                    return false;
+                }
+                timer = setTimeout(loopDeleting, 100); // Deleting speed
+            };
+            loopDeleting();
+        }
+        
+        document.addEventListener('DOMContentLoaded', () => { 
+            loadWeeklyTestimonialCarousel();
+            typingEffect();
+        });
+
+    </script>
+</head>
+<body>
+
+    <div id="language-bar">
+        <span style="font-weight: 600; color: var(--dark-blue);"><i class="fas fa-comment-alt"></i> We speak English & Spanish</span>
+        <div id="google_translate_element"></div>
+    </div>
+    <script type="text/javascript">
+    function googleTranslateElementInit() {
+      new google.translate.TranslateElement({ pageLanguage: 'en', includedLanguages: 'es,zh-CN,vi,hi,tl,en', layout: google.translate.TranslateElement.InlineLayout.SIMPLE }, 'google_translate_element');
+    }
+    </script>
+    <script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+
+    <header>
+        <div class="container header-content">
+            <a href="#home" class="logo">
+                <img src="https://pub-a9f35b2b86db4656b16e6e97d0d62544.r2.dev/logo.png" alt="Golden Charge Logo"/>
+                <span>Golden Charge</span>
+            </a>
+            <nav class="nav-menu">
+                <a href="tel:+14244653362" class="header-call-btn">📞 (424) GOLDENC</a>
+                <a href="#home">Home</a>
+                <a href="#services">Services</a>
+                <a href="#testimonials">Testimonials</a>
+                <a href="#calculator">Calculator</a>
+                <a href="#gallery">Gallery</a>
+                <a href="#about">About</a>
+                <a href="#contact">Contact</a>
+            </nav>
+        </div>
+    </header>
+
+    <section class="hero" id="home">
+        
+        <video autoplay muted loop playsinline class="hero-video">
+            <source src="https://pub-a9f35b2b86db4656b16e6e97d0d62544.r2.dev/hyperrealistic.mp4" type="video/mp4" media="(max-width: 768px)">
+            <source src="https://pub-a9f35b2b86db4656b16e6e97d0d62544.r2.dev/Create_a_hyperrealistic_202512011704.mp4" type="video/mp4">
+            Tu navegador no soporta videos HTML5.
+        </video>
+
+        <div class="hero-content" data-aos="fade-up" data-aos-duration="1000">
+            <h1>Expert Electricians in Bay Area</h1>
+            
+            <div class="typewriter-container">
+                <span>We power your</span>
+                <span class="dynamic-wrapper">
+                    <span class="typewriter-word"></span><span class="cursor">|</span>
+                </span>
+            </div>
+
+            <p>Safety, Reliability & Innovation. From Tesla chargers to full panel upgrades, we power your life 24/7.</p>
+            <a href="#contact" class="btn">Get Free Quote</a>
+        </div>
+    </section>
+
+    <section class="partners-section" data-aos="fade-up">
+        <div class="container partners-container">
+            <p class="partners-title">Certified Installers for Top Brands</p>
+            <div class="partners-grid">
+                <div class="partner-logo"><img src="https://pub-a9f35b2b86db4656b16e6e97d0d62544.r2.dev/tesla%20super1.jpg" alt="Tesla"></div>
+                <div class="partner-logo"><img src="https://pub-a9f35b2b86db4656b16e6e97d0d62544.r2.dev/hubspaces11.jpg" alt="Hubspace"></div>
+                <div class="partner-logo"><img src="https://pub-a9f35b2b86db4656b16e6e97d0d62544.r2.dev/Ring-Emblem.png" alt="Ring"></div>
+                <div class="partner-logo"><img src="https://pub-a9f35b2b86db4656b16e6e97d0d62544.r2.dev/Google_Nest_Logo_(2025).png" alt="Google Nest"></div>
+                <div class="partner-logo"><img src="https://pub-a9f35b2b86db4656b16e6e97d0d62544.r2.dev/evc11.jpg" alt="ChargePoint"></div>
+                <div class="partner-logo"><img src="https://pub-a9f35b2b86db4656b16e6e97d0d62544.r2.dev/Lutron-Electronics-Logo.png" alt="Lutron"></div>
+            </div>
+        </div>
+    </section>
+
+    <section class="services" id="services">
+        <div class="container">
+            <h2 class="section-title" data-aos="fade-up">Our Services</h2>
+            <div class="services-grid">
+                
+                <div class="service-card" data-aos="fade-up" data-aos-delay="100">
+                    <div class="service-video-wrapper">
+                        <video autoplay muted loop playsinline><source src="https://pub-a9f35b2b86db4656b16e6e97d0d62544.r2.dev/smart%20residencial.mp4" type="video/mp4"></video>
+                    </div>
+                    <h3>Residential</h3><p>Complete electrical installations, repairs, and upgrades for homes.</p>
+                </div>
+                
+                <div class="service-card" data-aos="fade-up" data-aos-delay="200">
+                    <div class="service-video-wrapper">
+                        <video autoplay muted loop playsinline><source src="https://pub-a9f35b2b86db4656b16e6e97d0d62544.r2.dev/smart%20commercial.mp4" type="video/mp4"></video>
+                    </div>
+                    <h3>Commercial</h3><p>Electrical systems for offices, stores, and industrial buildings.</p>
+                </div>
+
+                <div class="service-card" data-aos="fade-up" data-aos-delay="300">
+                    <div class="service-video-wrapper">
+                        <video autoplay muted loop playsinline><source src="https://pub-a9f35b2b86db4656b16e6e97d0d62544.r2.dev/paneles%20solares.mp4" type="video/mp4"></video>
+                    </div>
+                    <h3>Solar Panels</h3><p>Installation of photovoltaic systems and battery storage.</p>
+                </div>
+
+                <div class="service-card" data-aos="fade-up" data-aos-delay="400">
+                    <div class="service-video-wrapper">
+                        <video autoplay muted loop playsinline><source src="https://pub-a9f35b2b86db4656b16e6e97d0d62544.r2.dev/emergency.mp4" type="video/mp4"></video>
+                    </div>
+                    <h3>Emergency 24/7</h3><p>Fast response for power outages, faulty circuits, and safety issues.</p>
+                </div>
+
+                <div class="service-card" data-aos="fade-up" data-aos-delay="500">
+                    <div class="service-video-wrapper">
+                        <video autoplay muted loop playsinline><source src="https://pub-a9f35b2b86db4656b16e6e97d0d62544.r2.dev/low%20voltage.mp4" type="video/mp4"></video>
+                    </div>
+                    <h3>Low Voltage</h3><p>CCTV, intercoms, and network installations.</p>
+                </div>
+
+                <div class="service-card" data-aos="fade-up" data-aos-delay="600">
+                    <div class="service-video-wrapper">
+                        <video autoplay muted loop playsinline><source src="https://pub-a9f35b2b86db4656b16e6e97d0d62544.r2.dev/smart%20home.mp4" type="video/mp4"></video>
+                    </div>
+                    <h3>Smart Homes</h3><p>Automated lighting, thermostats, locks, and voice-control.</p>
+                </div>
+
+                <div class="service-card" data-aos="fade-up" data-aos-delay="700">
+                    <div class="service-video-wrapper">
+                        <video autoplay muted loop playsinline><source src="https://pub-a9f35b2b86db4656b16e6e97d0d62544.r2.dev/upgrade%20panel%20electrico.mp4" type="video/mp4"></video>
+                    </div>
+                    <h3>Panel Upgrades</h3><p>Modernization of electrical panels for safety and efficiency.</p>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <section class="testimonials" id="testimonials">
+        <div class="container">
+            <h2 class="section-title" data-aos="fade-up">Happy Customers</h2>
+            <div class="testimonial-container" data-aos="fade-up">
+                <div class="testimonial-card" id="testimonial-display">
+                    <p class="testimonial-text">Loading testimonial...</p>
+                    <p class="testimonial-author">— Golden Charge Team</p>
+                </div>
+                <div style="text-align: center;">
+                    <a href="https://g.page/r/CWm9Fz7PwMzQEAE/review" target="_blank" class="google-review-btn">
+                        <i class="fab fa-google"></i> Rate us on Google
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="calculator-section" id="calculator">
+        <div class="container">
+            <h2 class="section-title" data-aos="fade-up">Instant Cost Estimator</h2>
+            <p style="text-align:center;margin-bottom:30px;font-size:1.1rem;color:#555;" data-aos="fade-up">Get a quick estimate in 30 seconds. Final price confirmed on-site.</p>
+            <div class="calculator-wrapper" data-aos="zoom-in">
+                <div class="calc-step active" id="step1">
+                    <h3>1. Select service</h3>
+                    <div class="calc-options">
+                        <label class="calc-card"><input type="radio" name="service" value="panel-100" onclick="nextStep()"><span>100A Panel Upgrade</span></label>
+                        <label class="calc-card"><input type="radio" name="service" value="panel-200" onclick="nextStep()"><span>200A Panel Upgrade</span></label>
+                        <label class="calc-card"><input type="radio" name="service" value="ev-charger" onclick="nextStep()"><span>EV Charger Install</span></label>
+                        <label class="calc-card"><input type="radio" name="service" value="smart-home" onclick="nextStep()"><span>Basic Smart-Home</span></label>
+                        <label class="calc-card"><input type="radio" name="service" value="panel-400" onclick="nextStep()"><span>400A Panel Upgrade</span></label>
+                        <label class="calc-card"><input type="radio" name="service" value="full-smart-home" onclick="nextStep()"><span>Full Smart-Home</span></label>
+                        <label class="calc-card"><input type="radio" name="service" value="solar-panel" onclick="nextStep()"><span>Solar Install</span></label>
+                    </div>
+                </div>
+                <div class="calc-step" id="step2">
+                    <h3>2. Home details</h3>
+                    <div class="form-group inline-fields">
+                        <div>
+                            <label>Home size</label>
+                            <select id="houseSize" class="form-control">
+                                <option value="">Select…</option>
+                                <option value="small">Under 1,500 sq ft</option>
+                                <option value="medium">1,500–2,500 sq ft</option>
+                                <option value="large">Over 2,500 sq ft</option>
+                            </select>
+                        </div>
+                        <div>
+                            <label>Year built</label>
+                            <select id="houseYear" class="form-control">
+                                <option value="">Select…</option>
+                                <option value="new">After 1990</option>
+                                <option value="mid">1970–1990</option>
+                                <option value="old">Before 1970</option>
+                            </select>
+                        </div>
+                    </div>
+                    <button type="button" class="btn" onclick="calculateEstimate()" style="width:100%">Get Estimate</button>
+                </div>
+                <div class="calc-step" id="step3">
+                    <h3>Get Your Estimate</h3>
+                    <p style="margin-bottom:20px;">Enter your info to unlock the price instantly.</p>
+                    <div class="form-group inline-fields">
+                        <input type="email" id="leadEmail" class="form-control" placeholder="Email" required>
+                        <input type="text" id="leadCity" class="form-control" placeholder="City" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="tel" id="phoneNumber" class="form-control" placeholder="Your Phone Number" required>
+                    </div>
+                    <div id="recaptcha-container"></div>
+                    <button type="button" id="sendCodeBtn" class="btn" onclick="sendVerificationCode()" style="width: 100%;">Send Code & Capture Info</button>
+                    
+                    <div id="verificationCodeSection" style="display:none; margin-top: 20px;">
+                        <p style="font-weight: bold;">Enter the 6-digit code:</p>
+                        <div class="verification-code">
+                            <input type="tel" id="verificationCode" class="form-control verification-code-input" placeholder="_ _ _ _ _ _" maxlength="6">
+                        </div>
+                        <button type="button" class="btn" onclick="verifyCode()" style="width: 100%; margin-top: 15px;">Verify & Show Estimate</button>
+                        <p style="text-align: center; margin-top: 10px; font-size: 0.9rem;">Didn't receive code? <span id="resendLink" onclick="sendVerificationCode()" style="color:var(--dark-blue);cursor:pointer;text-decoration:underline;">Resend</span></p>
+                    </div>
+
+                    <div id="resultPrice" class="price-display" style="display:none;"></div>
+                    
+                    <form id="calcLeadForm" action="https://submit-form.com/7g1h0Ucdq" method="POST" style="display:none; margin-top: 15px;">
+                        <input type="hidden" name="_redirect" value="https://goldencharge.net/thanks.html"/>
+                        <p style="font-weight:bold; text-align:center;">To receive a detailed quote by email, please confirm below.</p>
+                        <input type="email" name="email" id="finalEmail" placeholder="Email" required class="form-control" style="margin-top: 10px;">
+                        <input type="tel" name="phone" id="finalPhone" placeholder="Phone" required class="form-control" style="margin-top: 10px;">
+                        <input type="hidden" name="service" id="calcService"><input type="hidden" name="size" id="calcSize"><input type="hidden" name="year" id="calcYear"><input type="hidden" name="estimatedTotal" id="calcTotal">
+                        <button type="submit" class="btn" style="width: 100%; margin-top: 10px;">Send Quote to My Email</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <form id="autoLeadCaptureForm" action="https://submit-form.com/7g1h0Ucdq" method="POST" style="display:none;">
+        <input type="hidden" name="_redirect" value="https://goldencharge.net/thanks.html"/>
+        <input type="hidden" name="source" value="Automatic Lead Capture">
+        <input type="email" name="email"><input type="text" name="city"><input type="tel" name="phone">
+    </form>
+
+    <section class="gallery" id="gallery">
+        <div class="container">
+            <h2 class="section-title" data-aos="fade-up">Recent Projects</h2>
+            <div class="gallery-grid">
+                <div class="project-card" data-aos="fade-up" data-aos-delay="100">
+                    <div class="img-wrapper"><img src="https://pub-a9f35b2b86db4656b16e6e97d0d62544.r2.dev/perfect%20panel.png" alt="Panel Upgrade"></div>
+                    <div class="project-info"><span class="tag-pill">Panel Upgrade</span><div class="project-title">Service Panel Replacement</div><p class="project-desc">Upgraded old unsafe panel to a modern 200A system. Safe & code compliant.</p><p class="project-loc"><i class="fas fa-map-marker-alt"></i> Fremont, CA</p></div>
+                </div>
+                <div class="project-card" data-aos="fade-up" data-aos-delay="200">
+                    <div class="img-wrapper"><img src="https://pub-a9f35b2b86db4656b16e6e97d0d62544.r2.dev/d9285ce7261578cd2e3d32a8d339e4f7.jpg" alt="Smart Home"></div>
+                    <div class="project-info"><span class="tag-pill" style="background:var(--dark-blue); color:#fff;">Smart Home</span><div class="project-title">Home Automation</div><p class="project-desc">Full smart home integration with lighting control and security features.</p><p class="project-loc"><i class="fas fa-map-marker-alt"></i> San Jose, CA</p></div>
+                </div>
+                <div class="project-card" data-aos="fade-up" data-aos-delay="300">
+                    <div class="img-wrapper"><img src="https://pub-a9f35b2b86db4656b16e6e97d0d62544.r2.dev/instalacion%20panel.jpg" alt="Commercial"></div>
+                    <div class="project-info"><span class="tag-pill">Commercial</span><div class="project-title">Commercial Wiring</div><p class="project-desc">Complex wiring and conduit installation for commercial property.</p><p class="project-loc"><i class="fas fa-map-marker-alt"></i> Union City, CA</p></div>
+                </div>
+                <div class="project-card" data-aos="fade-up" data-aos-delay="400">
+                    <div class="img-wrapper"><img src="https://pub-a9f35b2b86db4656b16e6e97d0d62544.r2.dev/panel%20d%20trencha.jpg" alt="Underground"></div>
+                    <div class="project-info"><span class="tag-pill">Underground</span><div class="project-title">Trenching & Supply</div><p class="project-desc">Underground conduit installation for main power supply lines.</p><p class="project-loc"><i class="fas fa-map-marker-alt"></i> Hayward, CA</p></div>
+                </div>
+                <div class="project-card" data-aos="fade-up" data-aos-delay="500">
+                    <div class="img-wrapper"><img src="https://pub-a9f35b2b86db4656b16e6e97d0d62544.r2.dev/evc11.jpg" alt="EV Charger"></div>
+                    <div class="project-info"><span class="tag-pill" style="background:#28a745; color:#fff;">EV Charger</span><div class="project-title">EV Station Install</div><p class="project-desc">High-speed EV charging station installation for home use.</p><p class="project-loc"><i class="fas fa-map-marker-alt"></i> Milpitas, CA</p></div>
+                </div>
+                <div class="project-card" data-aos="fade-up" data-aos-delay="600">
+                    <div class="img-wrapper"><img src="https://pub-a9f35b2b86db4656b16e6e97d0d62544.r2.dev/crowspace2.jpg" alt="Rewire"></div>
+                    <div class="project-info"><span class="tag-pill">Rewiring</span><div class="project-title">Crawlspace Work</div><p class="project-desc">Complete rewiring through difficult access areas to ensure safety.</p><p class="project-loc"><i class="fas fa-map-marker-alt"></i> Newark, CA</p></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="about" id="about">
+        <div class="container about-content">
+            <div class="about-text" data-aos="fade-right">
+                <h2>Why Choose Golden Charge LLC?</h2>
+                <p>We are a professional electrician company based in Fremont, CA, dedicated to providing safe, reliable, and innovative electrical solutions.</p>
+                <p><span class="highlight">24/7 emergency service • Free estimates • 1-year warranty • Bilingual support</span></p>
+                <p style="margin-top:20px;"><a href="#contact" class="btn">Meet the Team</a></p>
+            </div>
+            
+            <div class="about-image" data-aos="fade-left">
+                <img src="https://pub-a9f35b2b86db4656b16e6e97d0d62544.r2.dev/1755580579.png" alt="Licensed electrician"/>
+                
+                <div class="trust-badge">
+                    <span><i class="fas fa-certificate"></i></span>
+                    Lic#<br>1143055
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="contact" id="contact">
+        <div class="container">
+            <h2 class="section-title" data-aos="fade-up">Contact Us</h2>
+            <div class="contact-form" data-aos="zoom-in">
+                <form id="contactForm" action="https://submit-form.com/7g1h0Ucdq" method="POST">
+                    <input type="hidden" name="_redirect" value="https://goldencharge.net/thanks.html"/>
+                    <input type="hidden" name="_subject" value="Nuevo mensaje desde Golden Charge LLC"> 
+                    <div class="form-group"><label for="name">Name</label><input type="text" id="name" name="name" class="form-control" required placeholder="Your full name"></div>
+                    <div class="form-group"><label for="email">Email</label><input type="email" id="email" name="email" class="form-control" required placeholder="your.email@example.com"></div>
+                    <div class="form-group"><label for="phone">Phone</label><input type="tel" id="phone" name="phone" class="form-control" required placeholder="(xxx) xxx-xxxx"></div>
+                    <div class="form-group"><label for="service">Service</label>
+                        <select id="service" name="service" class="form-control" required>
+                            <option value="">Select a service</option>
+                            <option value="residential">Residential</option>
+                            <option value="commercial">Commercial</option>
+                            <option value="emergency">Emergency</option>
+                            <option value="low-voltage">Low Voltage</option>
+                            <option value="smart-home">Smart Home</option>
+                            <option value="panel-upgrade">Panel Upgrade</option>
+                            <option value="solar-panels">Solar Panels</option>
+                        </select>
+                    </div>
+                    <div class="form-group"><label for="message">Message</label><textarea id="message" name="message" class="form-control" rows="5" required placeholder="Tell us about your project…"></textarea></div>
+                    <button type="submit" class="form-submit">Send Message</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container footer-content">
+            <div class="footer-column">
+                <h3>Golden Charge LLC</h3>
+                <p>Professional electrical services in Fremont, CA. Fast, reliable, and safe solutions for homes and businesses.</p>
+            </div>
+            
+            <div class="footer-column">
+                <h3>Service Areas</h3>
+                <ul class="service-areas-list" style="list-style: none; padding: 0; font-size: 0.9rem; columns: 2;">
+                    <li><i class="fas fa-map-marker-alt" style="color:var(--gold-flat)"></i> Fremont</li>
+                    <li><i class="fas fa-map-marker-alt" style="color:var(--gold-flat)"></i> Newark</li>
+                    <li><i class="fas fa-map-marker-alt" style="color:var(--gold-flat)"></i> Union City</li>
+                    <li><i class="fas fa-map-marker-alt" style="color:var(--gold-flat)"></i> Milpitas</li>
+                    <li><i class="fas fa-map-marker-alt" style="color:var(--gold-flat)"></i> Hayward</li>
+                    <li><i class="fas fa-map-marker-alt" style="color:var(--gold-flat)"></i> San Jose</li>
+                    <li><i class="fas fa-map-marker-alt" style="color:var(--gold-flat)"></i> Santa Clara</li>
+                    <li><i class="fas fa-map-marker-alt" style="color:var(--gold-flat)"></i> Palo Alto</li>
+                    <li><i class="fas fa-map-marker-alt" style="color:var(--gold-flat)"></i> San Mateo</li>
+                    <li><i class="fas fa-map-marker-alt" style="color:var(--gold-flat)"></i> Santa Cruz</li>
+                    <li><i class="fas fa-map-marker-alt" style="color:var(--gold-flat)"></i> San Francisco</li>
+                    <li><i class="fas fa-map-marker-alt" style="color:var(--gold-flat)"></i> Lodi</li>
+                    <li><i class="fas fa-map-marker-alt" style="color:var(--gold-flat)"></i> Napa</li>
+                    <li><i class="fas fa-map-marker-alt" style="color:var(--gold-flat)"></i> Stockton</li>
+                </ul>
+            </div>
+
+            <div class="footer-column">
+                <h3>Contact Info</h3>
+                <div class="contact-info">
+                    <p>Fremont, CA<br>Golden Charge Electrician Company</p>
+                    
+                    <div style="margin-top: 15px; border-top: 1px solid rgba(255,255,255,0.1); padding-top: 15px;">
+                        <p style="color: var(--gold-flat); font-weight: 700; letter-spacing: 1px; margin-bottom: 5px;">
+                            CA Lic #1143055
+                        </p>
+                        <p style="font-size: 0.85rem; color: #aaa;">
+                            EIN: 39-4119592
+                        </p>
+                    </div>
+
+                    <div class="contact-item" style="margin-top: 15px;"> <span>📞 General:</span><br> <strong><a href="tel:+14244653362" style="color: #fff; text-decoration: none;">+1 (424) 465-3362</a></strong> </div>
+                    <div class="contact-item" style="margin-top: 5px;"> <span>📧 Support:</span><br> <a href="mailto:info@goldencharge.net">info@goldencharge.net</a> </div>
+                    <div class="contact-item" style="margin-top: 10px;"> <span>📞 Direct (CEO):</span><br> <strong><a href="tel:+15102211258" style="color: #fff; text-decoration: none;">+1 (510) 221-1258</a></strong> </div>
+                    <div class="contact-item" style="margin-top: 5px;"> <span>📧 CEO Email:</span><br> <a href="mailto:carlos.villalobos@goldencharge.net">carlos.villalobos@goldencharge.net</a> </div>
+                    <div class="contact-item" style="margin-top: 15px;">
+                        <a href="https://g.page/r/CWm9Fz7PwMzQEAE/review" target="_blank" style="color: #FFD700; font-weight: bold;">
+                            <i class="fab fa-google"></i> Leave us a Review on Google
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="copyright" style="text-align:center;padding:20px;color:#efb810;border-top:1px solid #112;">&copy; 2025 Golden Charge LLC. All rights reserved.</div>
+    </footer>
+
+    <div class="sticky-mobile-bar">
+        <a href="tel:+14244653362" class="sticky-btn sticky-call"><i class="fas fa-phone"></i> Call Now</a>
+        <a href="#calculator" class="sticky-btn sticky-quote"><i class="fas fa-bolt"></i> Get Quote</a>
+    </div>
+
+    <a href="https://wa.me/15102211258?text=Hi%20Golden%20Charge,%20I%20need%20a%20free%20estimate." class="whatsapp-btn" target="_blank">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init({ duration: 800, once: true, offset: 100 });
+    </script>
+    
+    <script src="https://cdn.botpress.cloud/webchat/v3.3/inject.js"></script>
+    <script src="https://files.bpcontent.cloud/2025/10/15/01/20251015014743-G5VKCJKE.js" defer></script>
+</body>
+</html>
